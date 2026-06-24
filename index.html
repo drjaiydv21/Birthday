@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Laddudi ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ffdde1,#ee9ca7);
+    overflow-x:hidden;
+    text-align:center;
+    color:#fff;
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    text-shadow:2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.hero h2{
+    margin-top:15px;
+    font-size:1.8rem;
+}
+
+.hero p{
+    max-width:700px;
+    margin-top:20px;
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+.btn{
+    margin-top:30px;
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    background:white;
+    color:#ff4f81;
+    font-size:1.1rem;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* BALLOONS */
+.balloon{
+    position:absolute;
+    bottom:-150px;
+    width:80px;
+    height:100px;
+    border-radius:50%;
+    animation:floatUp linear infinite;
+    cursor:pointer;
+}
+
+.balloon:before{
+    content:'';
+    position:absolute;
+    width:2px;
+    height:100px;
+    background:white;
+    left:50%;
+    top:100%;
+}
+
+@keyframes floatUp{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-120vh);
+    }
+}
+
+/* GALLERY */
+.gallery{
+    padding:70px 20px;
+}
+
+.gallery h2{
+    margin-bottom:30px;
+    font-size:2.5rem;
+}
+
+.photos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.photos img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:20px;
+    border:4px solid white;
+    transition:0.4s;
+}
+
+.photos img:hover{
+    transform:scale(1.05);
+}
+
+/* MESSAGE */
+.message{
+    padding:80px 20px;
+}
+
+.message-box{
+    max-width:900px;
+    margin:auto;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    padding:40px;
+    border-radius:25px;
+    line-height:2;
+    font-size:1.2rem;
+}
+
+/* HEARTS */
+.heart{
+    position:fixed;
+    color:red;
+    animation:fall 5s linear infinite;
+    top:-10px;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh);
+    }
+}
+
+footer{
+    padding:30px;
+    font-size:1rem;
+}
+</style>
+</head>
+
+<body>
+
+<div id="balloonContainer"></div>
+
+<section class="hero">
+    <h1>🎂 Happy Birthday 🎂</h1>
+    <h1>Laddudi ❤️</h1>
+
+    <h2>
+        My Humsafar • Madam Ji •  Laddoo
+    </h2>
+
+    <p>
+        Madam ji ek shuruat, pehli mulakat, or fir ham hamesha k liye sath sath
+	Aisa lagta h jaise kal ki hi to baat hai....itni jaldi waqt beet gya aapake sath.
+	Meri laddoo mai hamesha aapke sath khda hu, bas aise hi haste raha kro khush rha kro
+	Bcz app only meri wife nahi ho....meri dost, meri partner, meri khushi, meri taakat, meri humsafar, 
+	mera bachcha, meri miimmy........sab kuch ho aap mere liye.
+	Meri laddudi hamesha khush raha kro. Aap jab khush rehti ho, smile krti ho na to har din special lagta h my bachcha.
+	or ha ek baat or....overthinking not allowed 😂❤️
+	I love you so much my laddudi ❤️❤️❤️
+	You know na my laddudi:
+	Jainudi loves laddudi so much and...................... vo aapko pta hi hai
+    </p>
+
+    <button class="btn" onclick="burstBalloons()">
+        🎈 Burst the Balloons & Open Your Surprise 🎈
+    </button>
+</section>
+
+<section class="gallery">
+    <h2>📸 Our Beautiful Journey Together</h2>
+
+    <div class="photos">
+
+        <!-- Replace with your photos -->
+        <img src="images/1.jpg" alt="">
+        <img src="images/2.jpg" alt="">
+        <img src="images/3.jpg" alt="">
+        <img src="images/4.jpg" alt="">
+        <img src="images/5.jpg" alt="">
+        <img src="images/6.jpg" alt="">
+        <img src="images/7.jpg" alt="">
+        <img src="images/8.jpg" alt="">
+        <img src="images/9.jpg" alt="">
+        <img src="images/10.jpg" alt="">
+        <img src="images/11.jpg" alt="">
+        <img src="images/12.jpg" alt="">
+    </div>
+</section>
+
+<section class="message">
+
+    <h2>💌 A Message For My Love</h2>
+
+    <div class="message-box">
+
+        Dear Laddudi,
+
+        <br><br>
+
+        On 25th June, the world was blessed with someone truly special.
+        Thank you for filling my life with love, laughter, warmth and
+        endless happiness.
+
+        <br><br>
+
+        Har pal aapke sath yaadgar lagta hain ek beautiful memory ki tarah.
+        Har mushkil aasan lagti hai jab aap sath hoti ho to.
+        Har sapna sach lagta hai....qki mere pas meri laddudi jo hai.
+	Sabse ameer insaan hu mai...qki mere pas meri laddudi jo hai.
+
+        <br><br>
+
+        Today, I celebrate not only your birthday but also the beautiful
+        person you are.
+
+        <br><br>
+
+        I promise ki Main hamesha aapse aise hi pyar krta rahunga, aapke alava kbhi kisi ko apni life m launga,
+	M aapko hamesha support krunga, or ha tang to krta rahunga aapko.....qki tang krne ka tause nata hai gujariya.
+        Bas aise hi haste khelte ek dusre k sang bitayenge ye suhana safar...mere humsafar
+
+        <br><br>
+
+        ❤️ Happy Birthday My Humsafar ❤️
+
+        <br><br>
+
+        Forever Yours,
+        <br>
+        <strong>Aapka Jainudi</strong>
+
+    </div>
+</section>
+
+<footer>
+    Made with ❤️ for my beautiful wife - Laddudi
+</footer>
+
+<!-- Optional Music -->
+<audio id="music" loop>
+    <source src="birthday-song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+// Create balloons
+const colors = [
+'#ff4f81','#ff7eb3','#ffd166',
+'#06d6a0','#118ab2','#ef476f'
+];
+
+const container = document.getElementById('balloonContainer');
+
+for(let i=0;i<25;i++){
+
+    let balloon=document.createElement('div');
+    balloon.className='balloon';
+
+    balloon.style.left=Math.random()*100+'vw';
+    balloon.style.background=
+    colors[Math.floor(Math.random()*colors.length)];
+
+    balloon.style.animationDuration=
+    (8+Math.random()*8)+'s';
+
+    balloon.onclick=()=>{
+        balloon.remove();
+    };
+
+    container.appendChild(balloon);
+}
+
+// Balloon burst surprise
+function burstBalloons(){
+
+    document.querySelectorAll('.balloon')
+    .forEach(balloon=>{
+
+        balloon.style.transition='0.5s';
+        balloon.style.transform='scale(2)';
+        balloon.style.opacity='0';
+
+        setTimeout(()=>{
+            balloon.remove();
+        },500);
+    });
+
+    alert(
+        "❤️ Happy Birthday My Laddudi ❤️\n\nYou are the best thing that ever happened to me.\nI love you forever!"
+    );
+
+    document.getElementById('music').play();
+}
+
+// Falling hearts
+setInterval(()=>{
+
+    let heart=document.createElement('div');
+
+    heart.className='heart';
+    heart.innerHTML='❤️';
+
+    heart.style.left=Math.random()*100+'vw';
+    heart.style.fontSize=(15+Math.random()*25)+'px';
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },5000);
+
+},300);
+
+</script>
+
+</body>
+</html>
